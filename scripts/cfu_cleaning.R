@@ -7,7 +7,7 @@ dat1 <- select(dat1, 1:7)
 
 dat_long <- dat1 %>% 
   gather(Replicate, cfu, 2:6, -Media)
-
+ 
 dat_long <- mutate(dat_long, cfu = as.double(cfu))
 
 dat_long %>%
