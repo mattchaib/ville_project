@@ -9,7 +9,7 @@ dat_long <- dat1 %>%
   gather(Replicate, cfu, 2:6, -Media)
  
 dat_long <- mutate(dat_long, cfu = as.double(cfu))
-a
+
 dat_long %>%
   ggplot(aes(Treatment, cfu)) + 
   geom_point() + 
